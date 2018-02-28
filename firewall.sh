@@ -9,5 +9,5 @@ Flush(){
 }
 
 Search(){
-
+  cat /var/log/secure | grep ssh | grep 'Failed password for root from' | sed 's/^.*from //' > block_ip
 }
