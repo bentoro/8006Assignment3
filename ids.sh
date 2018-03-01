@@ -14,9 +14,10 @@ parse_logs(){
     cat $1 | grep $2 | grep 'Failed password for root from' > service_array
 
     #start date
-    start="Feb 28 14:04:29"
+    start=$(date +%s -d "yesterday")
+
     #end date
-    end="Feb 28 14:04:32"
+    end=$(date +%s)
     time1=$( date -d"$start" +"%s" )
     time2=$( date -d"$end" +"%s" )
 
