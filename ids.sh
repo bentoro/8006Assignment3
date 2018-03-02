@@ -42,9 +42,14 @@ block_ip(){
     while read line
     do
         arr=($line)
-        if [ "${arr[0]}" -gt 3]
+        if [ "${arr[0]}" -gt $2 ]
         then
             echo "blocking ip" ${arr[0]}
+        fi
+
+        if [ "${arr[0]}" -eq 1 ]
+        then
+            echo "unblocking ip" ${arr[0]}
         fi
     done < block_ip
 }
