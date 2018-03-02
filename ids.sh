@@ -14,12 +14,12 @@ parse_logs(){
     cat $1 | grep $2 | grep 'Failed password for root from' > service_array
 
     #start date
-    start=$(date +%s -d "yesterday")
+    #start=$(date +%s -d "yesterday")
 
     #end date
-    end=$(date +%s)
-    time1=$( date -d"$start" +"%s" )
-    time2=$( date -d"$end" +"%s" )
+    #end=$(date +%s)
+    time1=$(date +%s -d "yesterday")
+    time2=$(date +%s)
 
     while read line
     do
@@ -29,10 +29,14 @@ parse_logs(){
       if [ $test -ge $time1 ] && [ $test -le $time2 ]
       then
               array+=("${arr[0]} ${arr[1]} ${arr[2]} ${arr[10]} ${arr[12]}")
-              echo $array
       fi
-    done < test.txt
+    done < service_array
 
+    for i in "${array[@]}"
+    do
+      :
+      echo $i
+done
 }
 
 #wrapper function to easily analyze date/time format from the /var/log/sercure file

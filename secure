@@ -1,293 +1,231 @@
-Feb 25 18:26:41 datacomm-14 polkitd[672]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.43, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 25 18:26:42 localhost sshd[737]: Received signal 15; terminating.
-Feb 25 18:27:23 localhost polkitd[681]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 25 18:27:23 localhost polkitd[681]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 25 18:27:23 localhost polkitd[681]: Finished loading, compiling and executing 9 rules
-Feb 25 18:27:23 localhost polkitd[681]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 25 18:27:23 localhost sshd[733]: Server listening on 0.0.0.0 port 22.
-Feb 25 18:27:23 localhost sshd[733]: Server listening on :: port 22.
-Feb 25 18:27:24 localhost sddm-helper[818]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 25 18:27:24 localhost sddm-helper[818]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 25 18:27:24 localhost sddm-helper[818]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 25 18:27:24 localhost systemd[819]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 26 09:23:51 localhost sddm-helper[29849]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 26 09:23:51 localhost sddm-helper[29849]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 26 09:23:52 localhost sddm-helper[29849]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 26 09:23:52 localhost sddm-helper[29849]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 26 09:23:52 localhost sddm-helper[818]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 26 09:23:52 localhost systemd[828]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 26 09:23:52 localhost systemd[29854]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 09:23:52 localhost sddm-helper[29849]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 26 09:23:52 localhost sddm-helper[29849]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 26 09:23:52 localhost sddm-helper[29849]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 26 09:23:52 localhost sddm-helper[29849]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 26 09:23:52 localhost sddm-helper[29849]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 26 09:23:53 localhost polkitd[681]: Registered Authentication Agent for unix-session:2 (system bus name :1.89 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 26 09:24:00 localhost polkitd[681]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.89, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 26 09:24:01 localhost sshd[733]: Received signal 15; terminating.
-Feb 26 09:24:02 localhost sddm-helper[30608]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 09:24:02 localhost sddm-helper[30608]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 11:09:29 localhost polkitd[662]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 26 11:09:29 localhost polkitd[662]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 26 11:09:29 localhost polkitd[662]: Finished loading, compiling and executing 9 rules
-Feb 26 11:09:29 localhost polkitd[662]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 26 11:09:29 localhost sshd[726]: Server listening on 0.0.0.0 port 22.
-Feb 26 11:09:29 localhost sshd[726]: Server listening on :: port 22.
-Feb 26 11:09:30 localhost sddm-helper[818]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 11:09:30 localhost sddm-helper[818]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 11:09:30 localhost sddm-helper[818]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 26 11:09:30 localhost systemd[819]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 26 11:39:19 localhost sddm-helper[1042]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 26 11:39:20 localhost sddm-helper[818]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 26 11:39:20 localhost systemd[831]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 26 11:39:20 localhost systemd[1047]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 26 11:39:20 localhost sddm-helper[1042]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 26 11:39:21 localhost polkitd[662]: Registered Authentication Agent for unix-session:2 (system bus name :1.44 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 26 12:58:11 localhost sshd[726]: Received signal 15; terminating.
-Feb 26 12:58:11 localhost polkitd[662]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.44, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 26 12:58:11 localhost sddm-helper[16072]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 12:58:11 localhost sddm-helper[16072]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 12:58:46 localhost polkitd[682]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 26 12:58:46 localhost polkitd[682]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 26 12:58:46 localhost polkitd[682]: Finished loading, compiling and executing 9 rules
-Feb 26 12:58:46 localhost polkitd[682]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 26 12:58:47 localhost sshd[727]: Server listening on 0.0.0.0 port 22.
-Feb 26 12:58:47 localhost sshd[727]: Server listening on :: port 22.
-Feb 26 12:58:47 localhost sddm-helper[813]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 12:58:47 localhost sddm-helper[813]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 12:58:47 localhost sddm-helper[813]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 26 12:58:47 localhost systemd[820]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 26 12:58:55 localhost sddm-helper[813]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 26 12:58:55 localhost systemd[832]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 26 12:58:55 localhost systemd[996]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 26 12:58:55 localhost sddm-helper[992]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 26 12:58:57 localhost polkitd[682]: Registered Authentication Agent for unix-session:2 (system bus name :1.43 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 26 13:19:24 localhost sshd[727]: Received signal 15; terminating.
-Feb 26 13:19:24 localhost polkitd[682]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.43, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 26 13:19:25 localhost sddm-helper[12215]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 13:19:25 localhost sddm-helper[12215]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 13:19:58 localhost polkitd[679]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 26 13:19:58 localhost polkitd[679]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 26 13:19:58 localhost polkitd[679]: Finished loading, compiling and executing 9 rules
-Feb 26 13:19:58 localhost polkitd[679]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 26 13:19:59 localhost sshd[724]: Server listening on 0.0.0.0 port 22.
-Feb 26 13:19:59 localhost sshd[724]: Server listening on :: port 22.
-Feb 26 13:19:59 localhost sddm-helper[817]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 13:19:59 localhost sddm-helper[817]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 13:19:59 localhost sddm-helper[817]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 26 13:19:59 localhost systemd[823]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 26 13:20:04 localhost sddm-helper[817]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 26 13:20:04 localhost systemd[829]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 26 13:20:04 localhost systemd[918]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 26 13:20:04 localhost sddm-helper[914]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 26 13:20:06 localhost polkitd[679]: Registered Authentication Agent for unix-session:2 (system bus name :1.42 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 26 14:29:07 localhost sshd[724]: Received signal 15; terminating.
-Feb 26 14:29:07 localhost polkitd[679]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.42, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 26 14:29:07 localhost sddm-helper[2122]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 14:29:07 localhost sddm-helper[2122]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 14:29:43 localhost polkitd[694]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 26 14:29:43 localhost polkitd[694]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 26 14:29:43 localhost polkitd[694]: Finished loading, compiling and executing 9 rules
-Feb 26 14:29:43 localhost polkitd[694]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 26 14:29:43 localhost sshd[744]: Server listening on 0.0.0.0 port 22.
-Feb 26 14:29:43 localhost sshd[744]: Server listening on :: port 22.
-Feb 26 14:29:44 localhost sddm-helper[836]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 14:29:44 localhost sddm-helper[836]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 14:29:44 localhost sddm-helper[836]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 26 14:29:44 localhost systemd[837]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 26 15:16:29 localhost sshd[1081]: Accepted password for root from 192.168.0.13 port 41512 ssh2
-Feb 26 15:16:29 localhost systemd[1086]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 15:16:29 localhost sshd[1081]: pam_unix(sshd:session): session opened for user root by (uid=0)
-Feb 26 15:20:28 localhost sshd[1093]: Received disconnect from 192.168.0.13 port 41512:11: disconnected by user
-Feb 26 15:20:28 localhost sshd[1093]: Disconnected from user root 192.168.0.13 port 41512
-Feb 26 15:20:28 localhost sshd[1081]: pam_unix(sshd:session): session closed for user root
-Feb 26 15:20:49 localhost sshd[1205]: Accepted password for root from 192.168.0.13 port 41518 ssh2
-Feb 26 15:20:49 localhost systemd[1209]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 15:20:49 localhost sshd[1205]: pam_unix(sshd:session): session opened for user root by (uid=0)
-Feb 26 15:21:01 localhost sshd[1216]: Received disconnect from 192.168.0.13 port 41518:11: disconnected by user
-Feb 26 15:21:01 localhost sshd[1216]: Disconnected from user root 192.168.0.13 port 41518
-Feb 26 15:21:01 localhost sshd[1205]: pam_unix(sshd:session): session closed for user root
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 26 16:47:20 localhost sddm-helper[836]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 26 16:47:20 localhost systemd[849]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 26 16:47:20 localhost systemd[1411]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 26 16:47:20 localhost sddm-helper[1406]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 26 16:47:21 localhost polkitd[694]: Registered Authentication Agent for unix-session:6 (system bus name :1.55 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 26 16:52:44 localhost polkitd[694]: Unregistered Authentication Agent for unix-session:6 (system bus name :1.55, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 26 16:52:45 localhost sshd[744]: Received signal 15; terminating.
-Feb 26 16:53:20 localhost polkitd[674]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 26 16:53:20 localhost polkitd[674]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 26 16:53:20 localhost polkitd[674]: Finished loading, compiling and executing 9 rules
-Feb 26 16:53:20 localhost polkitd[674]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 26 16:53:20 localhost sshd[725]: Server listening on 0.0.0.0 port 22.
-Feb 26 16:53:20 localhost sshd[725]: Server listening on :: port 22.
-Feb 26 16:53:21 localhost sddm-helper[817]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 26 16:53:21 localhost sddm-helper[817]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 26 16:53:21 localhost sddm-helper[817]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 26 16:53:21 localhost systemd[823]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 26 16:54:06 localhost sddm-helper[995]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 26 16:54:06 localhost sddm-helper[995]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 26 16:54:06 localhost sddm-helper[995]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 26 16:54:06 localhost sddm-helper[995]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 26 16:54:06 localhost sddm-helper[817]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 26 16:54:06 localhost systemd[830]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 26 16:54:06 localhost systemd[999]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 26 16:54:07 localhost sddm-helper[995]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 26 16:54:07 localhost sddm-helper[995]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 26 16:54:07 localhost sddm-helper[995]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 26 16:54:07 localhost sddm-helper[995]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 26 16:54:07 localhost sddm-helper[995]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 26 16:54:08 localhost polkitd[674]: Registered Authentication Agent for unix-session:2 (system bus name :1.43 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 27 06:36:25 localhost polkitd[674]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.43, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 27 06:36:26 localhost sshd[725]: Received signal 15; terminating.
-Feb 27 06:37:02 localhost polkitd[678]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 27 06:37:02 localhost polkitd[678]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 27 06:37:02 localhost polkitd[678]: Finished loading, compiling and executing 9 rules
-Feb 27 06:37:02 localhost polkitd[678]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 27 06:37:02 localhost sshd[725]: Server listening on 0.0.0.0 port 22.
-Feb 27 06:37:02 localhost sshd[725]: Server listening on :: port 22.
-Feb 27 06:37:03 localhost sddm-helper[811]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 27 06:37:03 localhost sddm-helper[811]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 27 06:37:03 localhost sddm-helper[811]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 27 06:37:03 localhost systemd[816]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 27 07:04:59 localhost sddm-helper[811]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 27 07:04:59 localhost systemd[821]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 27 07:04:59 localhost systemd[1072]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 27 07:04:59 localhost sddm-helper[1067]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 27 07:05:00 localhost polkitd[678]: Registered Authentication Agent for unix-session:2 (system bus name :1.44 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 27 12:25:58 localhost polkitd[678]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.44, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 27 12:25:59 localhost sddm-helper[1067]: pam_unix(sddm:session): session closed for user root
-Feb 27 12:25:59 localhost sddm-helper[1067]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_close_session
-Feb 27 12:25:59 localhost sddm-helper[1067]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_close_session
-Feb 27 12:25:59 localhost sddm-helper[1067]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 27 12:25:59 localhost sddm-helper[1067]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 27 12:26:00 localhost sddm-helper[18576]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 27 12:26:00 localhost sddm-helper[18576]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 27 12:26:00 localhost sddm-helper[18576]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 27 12:26:00 localhost systemd[18577]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 27 13:31:53 localhost sddm-helper[18702]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 27 13:31:53 localhost sddm-helper[18702]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 27 13:31:54 localhost sddm-helper[18702]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 27 13:31:54 localhost sddm-helper[18702]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 27 13:31:54 localhost sddm-helper[18576]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 27 13:31:54 localhost systemd[18579]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 27 13:31:54 localhost systemd[18707]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 27 13:31:54 localhost sddm-helper[18702]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 27 13:31:54 localhost sddm-helper[18702]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 27 13:31:54 localhost sddm-helper[18702]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 27 13:31:54 localhost sddm-helper[18702]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 27 13:31:54 localhost sddm-helper[18702]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 27 13:31:55 localhost polkitd[678]: Registered Authentication Agent for unix-session:5 (system bus name :1.102 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 27 17:36:09 localhost polkitd[678]: Unregistered Authentication Agent for unix-session:5 (system bus name :1.102, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 27 17:36:10 localhost sshd[725]: Received signal 15; terminating.
-Feb 27 17:36:10 localhost systemd[18711]: pam_unix(systemd-user:session): session closed for user root
-Feb 27 17:36:48 localhost polkitd[684]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 27 17:36:48 localhost polkitd[684]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 27 17:36:48 localhost polkitd[684]: Finished loading, compiling and executing 9 rules
-Feb 27 17:36:48 localhost polkitd[684]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 27 17:36:48 localhost sshd[731]: Server listening on 0.0.0.0 port 22.
-Feb 27 17:36:48 localhost sshd[731]: Server listening on :: port 22.
-Feb 27 17:36:49 localhost sddm-helper[823]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 27 17:36:49 localhost sddm-helper[823]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 27 17:36:49 localhost sddm-helper[823]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 27 17:36:49 localhost systemd[829]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 27 17:37:00 localhost unix_chkpwd[998]: password check failed for user (root)
-Feb 27 17:37:00 localhost sddm-helper[996]: pam_unix(sddm:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=  user=root
-Feb 27 17:37:00 localhost sddm-helper[996]: pam_succeed_if(sddm:auth): requirement "uid >= 1000" not met by user "root"
-Feb 27 17:37:00 localhost sddm-helper[996]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 27 17:37:00 localhost sddm-helper[996]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 27 17:37:03 localhost unix_chkpwd[1001]: password check failed for user (root)
-Feb 27 17:37:03 localhost sddm-helper[999]: pam_unix(sddm:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=  user=root
-Feb 27 17:37:03 localhost sddm-helper[999]: pam_succeed_if(sddm:auth): requirement "uid >= 1000" not met by user "root"
-Feb 27 17:37:03 localhost sddm-helper[999]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 27 17:37:03 localhost sddm-helper[999]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 27 17:37:49 localhost sddm-helper[1004]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 27 17:37:50 localhost sddm-helper[823]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 27 17:37:50 localhost systemd[836]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 27 17:37:50 localhost systemd[1009]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 27 17:37:50 localhost sddm-helper[1004]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 27 17:37:51 localhost polkitd[684]: Registered Authentication Agent for unix-session:2 (system bus name :1.42 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 28 09:28:21 localhost polkitd[684]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.42, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
-Feb 28 09:28:22 localhost sshd[731]: Received signal 15; terminating.
-Feb 28 13:53:40 localhost polkitd[682]: Loading rules from directory /etc/polkit-1/rules.d
-Feb 28 13:53:40 localhost polkitd[682]: Loading rules from directory /usr/share/polkit-1/rules.d
-Feb 28 13:53:40 localhost polkitd[682]: Finished loading, compiling and executing 9 rules
-Feb 28 13:53:40 localhost polkitd[682]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
-Feb 28 13:53:41 localhost sshd[730]: Server listening on 0.0.0.0 port 22.
-Feb 28 13:53:41 localhost sshd[730]: Server listening on :: port 22.
-Feb 28 13:53:41 localhost sddm-helper[815]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
-Feb 28 13:53:41 localhost sddm-helper[815]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
-Feb 28 13:53:41 localhost sddm-helper[815]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
-Feb 28 13:53:41 localhost systemd[823]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
-Feb 28 13:53:45 localhost unix_chkpwd[922]: password check failed for user (root)
-Feb 28 13:53:45 localhost sddm-helper[920]: pam_unix(sddm:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=  user=root
-Feb 28 13:53:45 localhost sddm-helper[920]: pam_succeed_if(sddm:auth): requirement "uid >= 1000" not met by user "root"
-Feb 28 13:53:45 localhost sddm-helper[920]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 28 13:53:45 localhost sddm-helper[920]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
-Feb 28 13:53:51 localhost sddm-helper[815]: pam_unix(sddm-greeter:session): session closed for user sddm
-Feb 28 13:53:51 localhost systemd[834]: pam_unix(systemd-user:session): session closed for user sddm
-Feb 28 13:53:51 localhost systemd[1002]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_unix(sddm:session): session opened for user root by (uid=0)
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
-Feb 28 13:53:51 localhost sddm-helper[998]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
-Feb 28 13:53:52 localhost polkitd[682]: Registered Authentication Agent for unix-session:2 (system bus name :1.41 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
-Feb 28 14:03:29 localhost unix_chkpwd[2062]: password check failed for user (root)
-Feb 28 14:03:29 localhost sshd[2060]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.15  user=root
-Feb 28 14:03:29 localhost sshd[2060]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
-Feb 28 14:03:31 localhost sshd[2060]: Failed password for root from 192.168.0.15 port 21930 ssh2
-Feb 28 14:03:37 localhost unix_chkpwd[2063]: password check failed for user (root)
-Feb 28 14:03:37 localhost sshd[2060]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
-Feb 28 14:03:39 localhost sshd[2060]: Failed password for root from 192.168.0.15 port 21930 ssh2
-Feb 28 14:04:17 localhost sshd[2060]: Accepted password for root from 192.168.0.15 port 21930 ssh2
-Feb 28 14:04:17 localhost sshd[2060]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 25 15:31:05 datacomm-23 sudo[7562]:    root : TTY=pts/0 ; PWD=/root/.config/MonoDevelop-5.0 ; USER=root ; COMMAND=/bin/nano MonoDevelopProperties.xml
+Feb 25 15:31:05 datacomm-23 sudo[7562]: pam_systemd(sudo:session): Cannot create session: Already occupied by a session
+Feb 25 15:31:05 datacomm-23 sudo[7562]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 15:31:50 datacomm-23 sudo[7562]: pam_unix(sudo:session): session closed for user root
+Feb 25 15:32:11 datacomm-23 sudo[7608]:    root : TTY=pts/0 ; PWD=/root/.config/MonoDevelop-5.0 ; USER=root ; COMMAND=/bin/nano MonoDevelopProperties.xml
+Feb 25 15:32:11 datacomm-23 sudo[7608]: pam_systemd(sudo:session): Cannot create session: Already occupied by a session
+Feb 25 15:32:11 datacomm-23 sudo[7608]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 15:32:27 datacomm-23 sudo[7608]: pam_unix(sudo:session): session closed for user root
+Feb 25 15:33:36 datacomm-23 sudo[7715]:    root : TTY=pts/0 ; PWD=/root/.config/MonoDevelop-5.0 ; USER=root ; COMMAND=/bin/nano MonoDevelopProperties.xml
+Feb 25 15:33:36 datacomm-23 sudo[7715]: pam_systemd(sudo:session): Cannot create session: Already occupied by a session
+Feb 25 15:33:36 datacomm-23 sudo[7715]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 15:33:46 datacomm-23 sudo[7715]: pam_unix(sudo:session): session closed for user root
+Feb 25 15:51:37 datacomm-23 sudo[8350]:    root : TTY=pts/0 ; PWD=/root/Documents ; USER=root ; COMMAND=/bin/monodevelop
+Feb 25 15:51:37 datacomm-23 sudo[8350]: pam_systemd(sudo:session): Cannot create session: Already occupied by a session
+Feb 25 15:51:37 datacomm-23 sudo[8350]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 15:55:06 datacomm-23 sudo[8350]: pam_unix(sudo:session): session closed for user root
+Feb 25 17:06:20 datacomm-23 su[9990]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+Feb 25 17:06:20 datacomm-23 su[9990]: pam_unix(su:session): session opened for user root by (uid=0)
+Feb 25 17:06:21 datacomm-23 su[9990]: pam_unix(su:session): session closed for user root
+Feb 25 17:06:34 datacomm-23 su[10006]: pam_systemd(su:session): Cannot create session: Already occupied by a session
+Feb 25 17:06:34 datacomm-23 su[10006]: pam_unix(su:session): session opened for user root by (uid=0)
+Feb 25 17:06:34 datacomm-23 su[10006]: pam_unix(su:session): session closed for user root
+Feb 26 09:46:29 datacomm-23 polkitd[687]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.42, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
+Feb 26 09:46:30 localhost sshd[739]: Received signal 15; terminating.
+Feb 26 09:46:31 localhost sddm-helper[5329]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Feb 26 09:46:31 localhost sddm-helper[5329]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Feb 26 12:01:37 localhost polkitd[691]: Loading rules from directory /etc/polkit-1/rules.d
+Feb 26 12:01:37 localhost polkitd[691]: Loading rules from directory /usr/share/polkit-1/rules.d
+Feb 26 12:01:37 localhost polkitd[691]: Finished loading, compiling and executing 9 rules
+Feb 26 12:01:37 localhost polkitd[691]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Feb 26 12:01:37 localhost sshd[734]: Server listening on 0.0.0.0 port 22.
+Feb 26 12:01:37 localhost sshd[734]: Server listening on :: port 22.
+Feb 26 12:01:38 localhost sddm-helper[820]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Feb 26 12:01:38 localhost sddm-helper[820]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Feb 26 12:01:38 localhost sddm-helper[820]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
+Feb 26 12:01:38 localhost systemd[823]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
+Feb 26 12:05:29 localhost sddm-helper[820]: pam_unix(sddm-greeter:session): session closed for user sddm
+Feb 26 12:05:29 localhost systemd[830]: pam_unix(systemd-user:session): session closed for user sddm
+Feb 26 12:05:29 localhost systemd[1005]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_unix(sddm:session): session opened for user root by (uid=0)
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
+Feb 26 12:05:29 localhost sddm-helper[1001]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
+Feb 26 12:05:31 localhost polkitd[691]: Registered Authentication Agent for unix-session:2 (system bus name :1.39 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
+Feb 27 06:37:58 localhost polkitd[691]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.39, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
+Feb 27 06:37:59 localhost sshd[734]: Received signal 15; terminating.
+Feb 27 06:38:39 localhost polkitd[695]: Loading rules from directory /etc/polkit-1/rules.d
+Feb 27 06:38:39 localhost polkitd[695]: Loading rules from directory /usr/share/polkit-1/rules.d
+Feb 27 06:38:39 localhost polkitd[695]: Finished loading, compiling and executing 9 rules
+Feb 27 06:38:39 localhost polkitd[695]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Feb 27 06:38:39 localhost sshd[742]: Server listening on 0.0.0.0 port 22.
+Feb 27 06:38:39 localhost sshd[742]: Server listening on :: port 22.
+Feb 27 06:38:40 localhost sddm-helper[827]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Feb 27 06:38:40 localhost sddm-helper[827]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Feb 27 06:38:40 localhost sddm-helper[827]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
+Feb 27 06:38:40 localhost systemd[828]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
+Feb 27 07:35:26 localhost sddm-helper[827]: pam_unix(sddm-greeter:session): session closed for user sddm
+Feb 27 07:35:26 localhost systemd[837]: pam_unix(systemd-user:session): session closed for user sddm
+Feb 27 07:35:26 localhost systemd[1112]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_unix(sddm:session): session opened for user root by (uid=0)
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
+Feb 27 07:35:26 localhost sddm-helper[1107]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
+Feb 27 07:35:28 localhost polkitd[695]: Registered Authentication Agent for unix-session:2 (system bus name :1.46 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
+Feb 27 16:29:12 localhost polkitd[695]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.46, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
+Feb 27 16:29:13 localhost sshd[742]: Received signal 15; terminating.
+Feb 27 16:29:57 localhost polkitd[705]: Loading rules from directory /etc/polkit-1/rules.d
+Feb 27 16:29:57 localhost polkitd[705]: Loading rules from directory /usr/share/polkit-1/rules.d
+Feb 27 16:29:57 localhost polkitd[705]: Finished loading, compiling and executing 9 rules
+Feb 27 16:29:57 localhost polkitd[705]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Feb 27 16:29:58 localhost sshd[749]: Server listening on 0.0.0.0 port 22.
+Feb 27 16:29:58 localhost sshd[749]: Server listening on :: port 22.
+Feb 27 16:29:58 localhost sddm-helper[835]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Feb 27 16:29:58 localhost sddm-helper[835]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Feb 27 16:29:58 localhost sddm-helper[835]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
+Feb 27 16:29:58 localhost systemd[840]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
+Feb 27 16:40:02 localhost unix_chkpwd[1026]: password check failed for user (root)
+Feb 27 16:40:02 localhost sddm-helper[1024]: pam_unix(sddm:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=  user=root
+Feb 27 16:40:02 localhost sddm-helper[1024]: pam_succeed_if(sddm:auth): requirement "uid >= 1000" not met by user "root"
+Feb 27 16:40:02 localhost sddm-helper[1024]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
+Feb 27 16:40:02 localhost sddm-helper[1024]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
+Feb 27 16:40:11 localhost sddm-helper[835]: pam_unix(sddm-greeter:session): session closed for user sddm
+Feb 27 16:40:11 localhost systemd[844]: pam_unix(systemd-user:session): session closed for user sddm
+Feb 27 16:40:11 localhost systemd[1031]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_unix(sddm:session): session opened for user root by (uid=0)
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
+Feb 27 16:40:11 localhost sddm-helper[1027]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
+Feb 27 16:40:13 localhost polkitd[705]: Registered Authentication Agent for unix-session:2 (system bus name :1.42 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
+Feb 27 18:24:49 localhost polkitd[705]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.42, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
+Feb 27 18:24:50 localhost sshd[749]: Received signal 15; terminating.
+Feb 27 18:24:50 localhost systemd[1034]: pam_unix(systemd-user:session): session closed for user root
+Feb 27 18:25:26 localhost polkitd[682]: Loading rules from directory /etc/polkit-1/rules.d
+Feb 27 18:25:26 localhost polkitd[682]: Loading rules from directory /usr/share/polkit-1/rules.d
+Feb 27 18:25:26 localhost polkitd[682]: Finished loading, compiling and executing 9 rules
+Feb 27 18:25:26 localhost polkitd[682]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Feb 27 18:25:26 localhost sshd[729]: Server listening on 0.0.0.0 port 22.
+Feb 27 18:25:26 localhost sshd[729]: Server listening on :: port 22.
+Feb 27 18:25:27 localhost sddm-helper[813]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Feb 27 18:25:27 localhost sddm-helper[813]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Feb 27 18:25:27 localhost sddm-helper[813]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
+Feb 27 18:25:27 localhost systemd[814]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
+Feb 27 18:25:33 localhost sddm-helper[813]: pam_unix(sddm-greeter:session): session closed for user sddm
+Feb 27 18:25:33 localhost systemd[823]: pam_unix(systemd-user:session): session closed for user sddm
+Feb 27 18:25:33 localhost systemd[923]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_unix(sddm:session): session opened for user root by (uid=0)
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
+Feb 27 18:25:33 localhost sddm-helper[919]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
+Feb 27 18:25:34 localhost polkitd[682]: Registered Authentication Agent for unix-session:2 (system bus name :1.43 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
+Feb 27 18:53:05 localhost polkitd[682]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.43, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
+Feb 27 18:53:05 localhost sshd[729]: Received signal 15; terminating.
+Feb 27 18:53:05 localhost systemd[926]: pam_unix(systemd-user:session): session closed for user root
+Feb 27 18:53:06 localhost sddm-helper[21340]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Feb 27 18:53:06 localhost sddm-helper[21340]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Feb 27 18:53:44 localhost polkitd[702]: Loading rules from directory /etc/polkit-1/rules.d
+Feb 27 18:53:44 localhost polkitd[702]: Loading rules from directory /usr/share/polkit-1/rules.d
+Feb 27 18:53:44 localhost polkitd[702]: Finished loading, compiling and executing 9 rules
+Feb 27 18:53:44 localhost polkitd[702]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Feb 27 18:53:45 localhost sshd[746]: Server listening on 0.0.0.0 port 22.
+Feb 27 18:53:45 localhost sshd[746]: Server listening on :: port 22.
+Feb 27 18:53:45 localhost sddm-helper[825]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Feb 27 18:53:45 localhost sddm-helper[825]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Feb 27 18:53:45 localhost sddm-helper[825]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
+Feb 27 18:53:45 localhost systemd[829]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
+Feb 27 18:53:53 localhost sddm-helper[825]: pam_unix(sddm-greeter:session): session closed for user sddm
+Feb 27 18:53:53 localhost systemd[834]: pam_unix(systemd-user:session): session closed for user sddm
+Feb 27 18:53:53 localhost systemd[1015]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_unix(sddm:session): session opened for user root by (uid=0)
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
+Feb 27 18:53:53 localhost sddm-helper[1011]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
+Feb 27 18:53:55 localhost polkitd[702]: Registered Authentication Agent for unix-session:2 (system bus name :1.43 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
+Mar  1 09:37:41 localhost polkitd[702]: Unregistered Authentication Agent for unix-session:2 (system bus name :1.43, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8) (disconnected from bus)
+Mar  1 09:37:42 localhost sshd[746]: Received signal 15; terminating.
+Mar  1 09:38:21 localhost polkitd[672]: Loading rules from directory /etc/polkit-1/rules.d
+Mar  1 09:38:21 localhost polkitd[672]: Loading rules from directory /usr/share/polkit-1/rules.d
+Mar  1 09:38:21 localhost polkitd[672]: Finished loading, compiling and executing 9 rules
+Mar  1 09:38:21 localhost polkitd[672]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Mar  1 09:38:21 localhost sshd[731]: Server listening on 0.0.0.0 port 22.
+Mar  1 09:38:21 localhost sshd[731]: Server listening on :: port 22.
+Mar  1 09:38:22 localhost sddm-helper[816]: PAM unable to dlopen(/usr/lib64/security/pam_elogind.so): /usr/lib64/security/pam_elogind.so: cannot open shared object file: No such file or directory
+Mar  1 09:38:22 localhost sddm-helper[816]: PAM adding faulty module: /usr/lib64/security/pam_elogind.so
+Mar  1 09:38:22 localhost sddm-helper[816]: pam_unix(sddm-greeter:session): session opened for user sddm by (uid=0)
+Mar  1 09:38:22 localhost systemd[817]: pam_unix(systemd-user:session): session opened for user sddm by (uid=0)
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet5(sddm:auth): (null): pam_sm_authenticate
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet(sddm:auth): (null): pam_sm_authenticate
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet5(sddm:setcred): pam_kwallet5: pam_sm_setcred
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet(sddm:setcred): pam_kwallet: pam_sm_setcred
+Mar  1 09:38:37 localhost sddm-helper[816]: pam_unix(sddm-greeter:session): session closed for user sddm
+Mar  1 09:38:37 localhost systemd[826]: pam_unix(systemd-user:session): session closed for user sddm
+Mar  1 09:38:37 localhost systemd[1000]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_unix(sddm:session): session opened for user root by (uid=0)
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet5(sddm:session): pam_kwallet5: pam_sm_open_session
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet5(sddm:session): pam_kwallet5: final socket path: /run/user/0/kwallet5.socket
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet(sddm:session): pam_kwallet: pam_sm_open_session
+Mar  1 09:38:37 localhost sddm-helper[996]: pam_kwallet(sddm:session): pam_kwallet: final socket path: /run/user/0/kwallet.socket
+Mar  1 09:38:38 localhost polkitd[672]: Registered Authentication Agent for unix-session:2 (system bus name :1.43 [/usr/libexec/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_CA.UTF-8)
+Mar  1 15:12:52 datacomm-23 unix_chkpwd[3567]: password check failed for user (root)
+Mar  1 15:12:52 datacomm-23 sshd[3564]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.14  user=root
+Mar  1 15:12:52 datacomm-23 sshd[3564]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:12:55 datacomm-23 sshd[3564]: Failed password for root from 192.168.0.14 port 53488 ssh2
+Mar  1 15:12:55 datacomm-23 unix_chkpwd[3569]: password check failed for user (root)
+Mar  1 15:12:55 datacomm-23 sshd[3564]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:12:58 datacomm-23 sshd[3564]: Failed password for root from 192.168.0.14 port 53488 ssh2
+Mar  1 15:12:58 datacomm-23 unix_chkpwd[3571]: password check failed for user (root)
+Mar  1 15:12:58 datacomm-23 sshd[3564]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:13:00 datacomm-23 sshd[3564]: Failed password for root from 192.168.0.14 port 53488 ssh2
+Mar  1 15:13:00 datacomm-23 sshd[3564]: Connection closed by authenticating user root 192.168.0.14 port 53488 [preauth]
+Mar  1 15:13:00 datacomm-23 sshd[3564]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.14  user=root
+Mar  1 15:13:03 datacomm-23 unix_chkpwd[3574]: password check failed for user (root)
+Mar  1 15:13:03 datacomm-23 sshd[3572]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.22  user=root
+Mar  1 15:13:03 datacomm-23 sshd[3572]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:13:05 datacomm-23 sshd[3572]: Failed password for root from 192.168.0.22 port 36512 ssh2
+Mar  1 15:13:07 datacomm-23 unix_chkpwd[3576]: password check failed for user (root)
+Mar  1 15:13:07 datacomm-23 sshd[3572]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:13:09 datacomm-23 sshd[3572]: Failed password for root from 192.168.0.22 port 36512 ssh2
+Mar  1 15:13:11 datacomm-23 unix_chkpwd[3578]: password check failed for user (root)
+Mar  1 15:13:11 datacomm-23 sshd[3572]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:13:14 datacomm-23 sshd[3572]: Failed password for root from 192.168.0.22 port 36512 ssh2
+Mar  1 15:13:14 datacomm-23 sshd[3572]: Connection closed by authenticating user root 192.168.0.22 port 36512 [preauth]
+Mar  1 15:13:14 datacomm-23 sshd[3572]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.22  user=root
+Mar  1 15:16:35 datacomm-23 unix_chkpwd[3703]: password check failed for user (root)
+Mar  1 15:16:35 datacomm-23 sshd[3699]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.17  user=root
+Mar  1 15:16:35 datacomm-23 sshd[3699]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:16:37 datacomm-23 sshd[3699]: Failed password for root from 192.168.0.17 port 52350 ssh2
+Mar  1 15:16:39 datacomm-23 unix_chkpwd[3705]: password check failed for user (root)
+Mar  1 15:16:39 datacomm-23 sshd[3699]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:16:41 datacomm-23 sshd[3699]: Failed password for root from 192.168.0.17 port 52350 ssh2
+Mar  1 15:16:43 datacomm-23 unix_chkpwd[3707]: password check failed for user (root)
+Mar  1 15:16:43 datacomm-23 sshd[3699]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:16:45 datacomm-23 sshd[3699]: Failed password for root from 192.168.0.17 port 52350 ssh2
+Mar  1 15:16:45 datacomm-23 sshd[3699]: Connection closed by authenticating user root 192.168.0.17 port 52350 [preauth]
+Mar  1 15:16:45 datacomm-23 sshd[3699]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.17  user=root
+Mar  1 15:34:05 datacomm-23 unix_chkpwd[5253]: password check failed for user (root)
+Mar  1 15:34:05 datacomm-23 sshd[5249]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.25  user=root
+Mar  1 15:34:05 datacomm-23 sshd[5249]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:34:07 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  1 15:34:09 datacomm-23 unix_chkpwd[5255]: password check failed for user (root)
+Mar  1 15:34:09 datacomm-23 sshd[5249]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:34:11 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  1 15:34:15 datacomm-23 unix_chkpwd[5258]: password check failed for user (root)
+Mar  1 15:34:15 datacomm-23 sshd[5249]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+Mar  1 15:34:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  1 15:34:17 datacomm-23 sshd[5249]: Connection closed by authenticating user root 192.168.0.25 port 58032 [preauth]
+Mar  1 15:34:17 datacomm-23 sshd[5249]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.25  user=root
