@@ -24,11 +24,19 @@ parse_logs(){
         test=$( date -d"$str" +"%s" )
         if [ $test -ge $time1 ] && [ $test -le $time2 ]
         then
-            echo "found entry at: " $test " against: " $time1 
+            echo "found entry at: " $test " against: " $time1
             echo "${arr[0]} ${arr[1]} ${arr[2]} ${arr[10]} ${arr[12]}" >> parsed_secure
 
         fi
     done < service_array
+}
+#if the ip exists in the file return true
+isblocked(){
+  if grep -q $1 blocked; then
+    return 0
+  else
+    return 1
+  fi
 }
 
 block_ip(){
@@ -40,12 +48,21 @@ block_ip(){
         arr=($line)
         if [ "${arr[0]}" -ge $2 ]
         then
+          #if ip is already blocked dont block it
+          if isblocked ${arr[1]}; then
+            echo "already blocked"
+          else
             echo "blocking ip" ${arr[1]}
+            #add ip to the blocked list
+            echo ${arr[1]} >> blocked
             $IP -A INPUT -s ${arr[1]} -j DROP
             echo "/sbin/iptables -D INPUT -s ${arr[1]} -j DROP" > remove.sh
+            echo "sed -i "/${arr[1]}/d" blocked" > remove.sh
             chmod 755 remove.sh
             at -f jobs.txt now + $1 minutes
             echo "at job set to remove block after $1 mins"
+          fi
+
         else
             echo "not blocking" ${arr[1]} " since instances: " ${arr[0]} "/" $2
         fi
