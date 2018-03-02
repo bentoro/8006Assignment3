@@ -46,12 +46,11 @@ block_ip(){
         if [ "${arr[0]}" -le $2 ]
         then
             echo "blocking ip" ${arr[1]}
+            $IP -A INPUT -s $1 -j DROP
+            echo $IP -D INPU -s ${arr[1]} -j DROP > remove_ip
+            at -f jobs.txt ${arr[1]} now + 24 days
         fi
 
-        if [ "${arr[0]}" -eq 1 ]
-        then
-            echo "unblocking ip" ${arr[1]}
-        fi
     done < block_ip
 }
 
