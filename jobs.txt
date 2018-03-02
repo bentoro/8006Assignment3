@@ -1,1 +1,1 @@
-remove.sh
+./remove.sh

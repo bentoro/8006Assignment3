@@ -7,75 +7,60 @@ parse_logs(){
 
     #find all failed attempts within time range
     cat $1 | grep $2 | grep 'Failed password for root from' > service_array
+    echo > parsed_secure
 
     #start date
     #start=$(date +%s -d "yesterday")
 
     #end date
     #end=$(date +%s)
-    time1=$(date +%s -d "yesterday")
+    time1=$(date +%s -d "$3 min ago")
     time2=$(date +%s)
 
     while read line
     do
-      arr=($line)
-      str=("${arr[0]} ${arr[1]} ${arr[2]}")
-      test=$( date -d"$str" +"%s" )
-      if [ $test -ge $time1 ] && [ $test -le $time2 ]
-      then
-              ssh_array+=("${arr[0]} ${arr[1]} ${arr[2]} ${arr[10]} ${arr[12]}")
-      fi
+        arr=($line)
+        str=("${arr[0]} ${arr[1]} ${arr[2]}")
+        test=$( date -d"$str" +"%s" )
+        if [ $test -ge $time1 ] && [ $test -le $time2 ]
+        then
+            echo "found entry at: " $test " against: " $time1 
+            echo "${arr[0]} ${arr[1]} ${arr[2]} ${arr[10]} ${arr[12]}" >> parsed_secure
+
+        fi
     done < service_array
 }
 
 block_ip(){
-    #find ip and port of all failed attempts for ssh TODO: add Date and Time to block_ip
-    #cat $1 | grep 'Failed password for root from' | sed 's/^.*from //' > block_ip
-
-    #find all instances that failed
-    #cat block_ip | sed 's/ .*//'
-
-
-
-    cat service_array | grep -Po "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" | uniq -c >block_ip
-
+    #find ip and port of all failed attempts for ssh
+    cat parsed_secure | grep -Po "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" | uniq -c > block_ip
 
     while read line
     do
         arr=($line)
-        if [ "${arr[0]}" -le $2 ]
+        if [ "${arr[0]}" -ge $2 ]
         then
             echo "blocking ip" ${arr[1]}
-            $IP -A INPUT -s $1 -j DROP
-            echo $IP -D INPU -s ${arr[1]} -j DROP > remove_ip
-            at -f jobs.txt ${arr[1]} now + 24 days
+            $IP -A INPUT -s ${arr[1]} -j DROP
+            echo "/sbin/iptables -D INPUT -s ${arr[1]} -j DROP" > remove.sh
+            chmod 755 remove.sh
+            at -f jobs.txt now + $1 minutes
+            echo "at job set to remove block after $1 mins"
+        else
+            echo "not blocking" ${arr[1]} " since instances: " ${arr[0]} "/" $2
         fi
 
     done < block_ip
 }
 
-#wrapper function to easily analyze date/time format from the /var/log/sercure file
-#find_date_time()
-
-
-
-#wrapper function to easily analyze ip from a line
-#find_ip()
-    #sed
-
-
-#wrapper function to easily analyze port from a line (extra)
-#find_port()
-
-firewall(){
-  $IP -A INPUT -s $1 -j DROP
-}
-
-flush(){
-  $IP -D -s $1 -J DROP
-}
-
 #1 = log file location
 #2 = service
-parse_logs $1 $2
-block_ip service_array $3
+#3 = time to check
+#4 = number of failed attempts before blocking ip
+if [ "$#" -ne 4 ]; then
+    echo "Usage error: ./ids.sh [log file location] [service to find] [amount of time blocked] [number of failed attempts]"
+    exit 1
+fi
+
+parse_logs $1 $2 $3
+block_ip $3 $4
