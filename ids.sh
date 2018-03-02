@@ -13,7 +13,7 @@ parse_logs(){
 
     #end date
     #end=$(date +%s)
-    time1=$(date +%s -d "yesterday")
+    time1=$(date +%s -d "$3 min ago")
     time2=$(date +%s)
 
     while read line
@@ -47,8 +47,9 @@ block_ip(){
         then
             echo "blocking ip" ${arr[1]}
             $IP -A INPUT -s $1 -j DROP
-            echo $IP -D INPU -s ${arr[1]} -j DROP > remove_ip
-            at -f jobs.txt ${arr[1]} now + 24 days
+            echo "/sbin/iptables -D INPUT -s ${arr[1]} -j DROP" > remove_ip
+            at -f jobs.txt ${arr[1]} now + $3 min
+            echo "at job set to remove block after $3 mins"
         fi
 
     done < block_ip
@@ -77,5 +78,11 @@ flush(){
 
 #1 = log file location
 #2 = service
-parse_logs $1 $2
-block_ip service_array $3
+#3 = time to check
+#4 = number of failed attempts before blocking ip
+if [ "$#" -ne 3 ]; then
+  echo "Usage error: ./ids.sh [log file location] [service to find] [amount of time blocked] [number of failed attempts]"
+  exit 1
+fi
+parse_logs $1 $2 $4
+block_ip service_array $3 $4
