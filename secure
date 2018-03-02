@@ -220,12 +220,12 @@ Mar  1 15:16:45 datacomm-23 sshd[3699]: PAM 2 more authentication failures; logn
 Mar  1 15:34:05 datacomm-23 unix_chkpwd[5253]: password check failed for user (root)
 Mar  1 15:34:05 datacomm-23 sshd[5249]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.25  user=root
 Mar  1 15:34:05 datacomm-23 sshd[5249]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
-Mar  1 15:34:07 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  2 14:04:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
 Mar  1 15:34:09 datacomm-23 unix_chkpwd[5255]: password check failed for user (root)
 Mar  1 15:34:09 datacomm-23 sshd[5249]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
-Mar  1 15:34:11 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  2 14:04:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
 Mar  1 15:34:15 datacomm-23 unix_chkpwd[5258]: password check failed for user (root)
 Mar  1 15:34:15 datacomm-23 sshd[5249]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
-Mar  1 15:34:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  2 14:04:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
 Mar  1 15:34:17 datacomm-23 sshd[5249]: Connection closed by authenticating user root 192.168.0.25 port 58032 [preauth]
 Mar  1 15:34:17 datacomm-23 sshd[5249]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.25  user=root

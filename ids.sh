@@ -1,5 +1,4 @@
 IP="/sbin/iptables"
-ssh_array=()
 
 
 #parses the /var/log/secure file for $1 service, and creates an array with the Date, Time, IP address, and port
@@ -7,16 +6,12 @@ parse_logs(){
 
     #find all failed attempts within time range
     cat $1 | grep $2 | grep 'Failed password for root from' > service_array
+
+    #empty the parsed_secure file
     echo > parsed_secure
-
-    #start date
-    #start=$(date +%s -d "yesterday")
-
-    #end date
-    #end=$(date +%s)
     time1=$(date +%s -d "$3 min ago")
     time2=$(date +%s)
-
+    #parse the failed attempts by date
     while read line
     do
         arr=($line)
@@ -30,8 +25,9 @@ parse_logs(){
         fi
     done < service_array
 }
-#if the ip exists in the file return true
-isblocked(){
+
+isBlocked(){
+  #if the ip exists in the file return true
   if grep -q $1 blocked; then
     return 0
   else
@@ -49,15 +45,17 @@ block_ip(){
         if [ "${arr[0]}" -ge $2 ]
         then
           #if ip is already blocked dont block it
-          if isblocked ${arr[1]}; then
+          if isBlocked ${arr[1]}; then
             echo "already blocked"
           else
+            #empty the remove.sh file
+            echo > remove.sh
             echo "blocking ip" ${arr[1]}
             #add ip to the blocked list
             echo ${arr[1]} >> blocked
             $IP -A INPUT -s ${arr[1]} -j DROP
-            echo "/sbin/iptables -D INPUT -s ${arr[1]} -j DROP" > remove.sh
-            echo "sed -i "/${arr[1]}/d" blocked" > remove.sh
+            echo "/sbin/iptables -D INPUT -s ${arr[1]} -j DROP" >> remove.sh
+            echo "sed -i "/${arr[1]}/d" blocked" >> remove.sh
             chmod 755 remove.sh
             at -f jobs.txt now + $1 minutes
             echo "at job set to remove block after $1 mins"
