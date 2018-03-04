@@ -1,5 +1,505 @@
 
-found entry at:  1520140457  against:  1520140373
-found entry at:  1520140457  against:  1520140373
-found entry at:  1520140457  against:  1520140373
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152834
+found entry at:  1520152950  against:  1520152834
+found entry at:  1520152980  against:  1520152834
 blocking ip 192.168.0.25
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152839
+found entry at:  1520152950  against:  1520152839
+found entry at:  1520152980  against:  1520152839
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152844
+found entry at:  1520152950  against:  1520152844
+found entry at:  1520152980  against:  1520152844
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152849
+found entry at:  1520152950  against:  1520152849
+found entry at:  1520152980  against:  1520152849
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152854
+found entry at:  1520152950  against:  1520152854
+found entry at:  1520152980  against:  1520152854
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152859
+found entry at:  1520152950  against:  1520152859
+found entry at:  1520152980  against:  1520152859
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152864
+found entry at:  1520152950  against:  1520152864
+found entry at:  1520152980  against:  1520152864
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152869
+found entry at:  1520152950  against:  1520152869
+found entry at:  1520152980  against:  1520152869
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152874
+found entry at:  1520152950  against:  1520152874
+found entry at:  1520152980  against:  1520152874
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152879
+found entry at:  1520152950  against:  1520152879
+found entry at:  1520152980  against:  1520152879
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152884
+found entry at:  1520152950  against:  1520152884
+found entry at:  1520152980  against:  1520152884
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152889
+found entry at:  1520152950  against:  1520152889
+found entry at:  1520152980  against:  1520152889
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152894
+found entry at:  1520152950  against:  1520152894
+found entry at:  1520152980  against:  1520152894
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152899
+found entry at:  1520152950  against:  1520152899
+found entry at:  1520152980  against:  1520152899
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152904
+found entry at:  1520152950  against:  1520152904
+found entry at:  1520152980  against:  1520152904
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152909
+found entry at:  1520152950  against:  1520152909
+found entry at:  1520152980  against:  1520152909
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152914
+found entry at:  1520152950  against:  1520152914
+found entry at:  1520152980  against:  1520152914
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152920  against:  1520152919
+found entry at:  1520152950  against:  1520152919
+found entry at:  1520152980  against:  1520152919
+already blocked
+192.168.0.25 attempted: 3/3 times
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152950  against:  1520152924
+found entry at:  1520152980  against:  1520152924
+not blocking 192.168.0.25  since instances:  2 / 3
+192.168.0.25 attempted: 2/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152950  against:  1520152929
+found entry at:  1520152980  against:  1520152929
+not blocking 192.168.0.25  since instances:  2 / 3
+192.168.0.25 attempted: 2/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152950  against:  1520152934
+found entry at:  1520152980  against:  1520152934
+not blocking 192.168.0.25  since instances:  2 / 3
+192.168.0.25 attempted: 2/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152950  against:  1520152939
+found entry at:  1520152980  against:  1520152939
+not blocking 192.168.0.25  since instances:  2 / 3
+192.168.0.25 attempted: 2/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152950  against:  1520152944
+found entry at:  1520152980  against:  1520152944
+not blocking 192.168.0.25  since instances:  2 / 3
+192.168.0.25 attempted: 2/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152950  against:  1520152950
+found entry at:  1520152980  against:  1520152950
+not blocking 192.168.0.25  since instances:  2 / 3
+192.168.0.25 attempted: 2/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152980  against:  1520152955
+not blocking 192.168.0.25  since instances:  1 / 3
+192.168.0.25 attempted: 1/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152980  against:  1520152960
+not blocking 192.168.0.25  since instances:  1 / 3
+192.168.0.25 attempted: 1/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152980  against:  1520152965
+not blocking 192.168.0.25  since instances:  1 / 3
+192.168.0.25 attempted: 1/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152980  against:  1520152970
+not blocking 192.168.0.25  since instances:  1 / 3
+192.168.0.25 attempted: 1/3 times
+clearing: 192.168.0.25
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found nothing
+found entry at:  1520152980  against:  1520152975
+not blocking 192.168.0.25  since instances:  1 / 3
+192.168.0.25 attempted: 1/3 times
+clearing: 192.168.0.25

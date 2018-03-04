@@ -229,8 +229,6 @@ Mar  1 15:34:15 datacomm-23 sshd[5249]: pam_succeed_if(sshd:auth): requirement "
 Mar  2 14:04:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
 Mar  1 15:34:17 datacomm-23 sshd[5249]: Connection closed by authenticating user root 192.168.0.25 port 58032 [preauth]
 Mar  1 15:34:17 datacomm-23 sshd[5249]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.25  user=root
-
-
-Mar  3 21:14:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
-Mar  3 21:14:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
-Mar  3 21:14:17 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  4 00:42:00 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  4 00:42:30 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
+Mar  4 00:43:00 datacomm-23 sshd[5249]: Failed password for root from 192.168.0.25 port 58032 ssh2
