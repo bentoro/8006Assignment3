@@ -1,6 +1,4 @@
 IP="/sbin/iptables"
-time1=$(date +%s -d "$3 min ago")
-time2=$(date +%s)
 
 #parses the /var/log/secure file for $1 service, and creates an array with the Date, Time, IP address, and port
 parse_logs(){
@@ -11,16 +9,16 @@ parse_logs(){
     #empty the parsed_secure file
     echo > parsed_secure
     #parse the failed attempts by date
+    time1=$(date +%s -d "$3 minutes ago")
+    time2=$(date +%s)
     while read line
     do
         arr=($line)
         str=("${arr[0]} ${arr[1]} ${arr[2]}")
         test=$( date -d"$str" +"%s" )
-        time=("Mar 2 16:34:17");test=$(date -d"$time 1 minutes"); echo $test
-
         if [ $test -ge $time1 ] && [ $test -le $time2 ]
         then
-            echo "found entry at: " $test " against: " $time1
+            printf "found entry at: $(date -d"$str") \n"
             echo "${arr[0]} ${arr[1]} ${arr[2]} ${arr[10]}" >> parsed_secure
 
         fi
@@ -34,12 +32,15 @@ isBlocked(){
     #extract the last time the ip was used
     line=$(tac blocked | grep -m1 $t | sed "s/$t.*//")
     test=$(date +%s -d"$line $2 minutes")
+    currtime=$(date +%s)
     #compare the blocked time + duration with the current time
-    printf "comparing $(date -d"$line") and $(date) \n"
-    if [ $test -ge $time2 ]
+    printf "comparing $(date -d"$line") with $(date) \n"
+    if [ $test -ge $currtime ]
     then
       #drop the ip because time duration has passed
-        $ip -D INPUT -s $1 -j DROP
+        $IP -D INPUT -s $1 -j DROP
+        echo $1 "has been unblocked"
+
     else
         return 0
     fi
@@ -52,9 +53,8 @@ unblock(){
   #check if ips need to be unblocked first
   while read line
   do
-    $arr=($line)
+    arr=($line)
     isBlocked ${arr[3]}
-  fi
 done < blocked
 }
 
@@ -72,19 +72,14 @@ block_ip(){
           if isBlocked ${arr[1]} $1; then
             echo "already blocked"
           else
-            #empty the remove.sh file
-            echo > remove.sh
+            #echo > remove.sh
             echo "blocking ip" ${arr[1]}
             #add ip to the blocked list and time
             t="${arr[1]}"
+            #add the last instance of the time into the blocked list
             line=$(tac parsed_secure | grep -m1 $t | sed "s/$t.*//")
             echo "$line ${arr[1]}" >> blocked
-            #$IP -A INPUT -s ${arr[1]} -j DROP
-            #echo "/sbin/iptables -D INPUT -s ${arr[1]} -j DROP" >> remove.sh
-            #echo "sed -i "/${arr[1]}/d" blocked" >> remove.sh
-            #chmod 755 remove.sh
-            #at -f jobs.txt now + 1 minutes
-            #echo "at job set to remove block after $1 mins"
+            $IP -A INPUT -s ${arr[1]} -j DROP
           fi
 
         else
