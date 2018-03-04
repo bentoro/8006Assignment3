@@ -54,9 +54,9 @@ block_ip(){
             $IP -A INPUT -s ${arr[1]} -j DROP
             echo "/sbin/iptables -D INPUT -s ${arr[1]} -j DROP" >> remove.sh
             echo "sed -i "/${arr[1]}/d" blocked" >> remove.sh
-            chmod 755 remove.sh
-            at -f jobs.txt now + $1 minutes
-            echo "at job set to remove block after $1 mins" >> $log
+            #chmod 755 remove.sh
+            #at -f jobs.txt now + $1 minutes
+            #$echo "at job set to remove block after $1 mins" >> $log
           fi
 
         else
@@ -81,6 +81,7 @@ rm -f parsed_secure
 rm -f service_array
 rm -f log.txt
 echo > log.txt
+echo > blocked
 
 
 parse_logs $1 $2 $3
