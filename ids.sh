@@ -34,8 +34,8 @@ isBlocked(){
     test=$(date +%s -d"$line $2 minutes")
     currtime=$(date +%s)
     #compare the blocked time + duration with the current time
-    printf "comparing $(date -d"$line") with $(date) \n"
-    if [ $test -ge $currtime ]
+    printf "comparing $(date -d"$line $2 minutes") with $(date) \n"
+    if [ $currtime -ge $test ]
     then
       #drop the ip because time duration has passed
         $IP -D INPUT -s $1 -j DROP
