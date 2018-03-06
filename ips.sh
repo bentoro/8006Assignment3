@@ -1,4 +1,28 @@
 #!/bin/bash
+#------------------------------------------------------------------------------
+# SOURCE FILE: 		ips.sh
+#
+# PROGRAM:  		COMP8006 - Assignment 3
+#
+#			function parse_logs()
+#			function isBlocked()
+#			function unblock()
+#			function block_ip()
+#
+# DATE:			Mar 6, 2018
+#
+# DESIGNER:		Benedict Lo
+# Programmer:		Benedict Lo
+#
+# Parameters: String filename - filename of the log
+#             String service - service to check for failed attempts
+#             int time - duration to go back in the log
+#
+# NOTES:		This script checks /var/log/secure and determines if there are any
+#           IP's that have failed attempts using the specified service, if it
+#           exceeds the limit block the ip for the user defined time.
+#
+#------------------------------------------------------------------------------
 
 IP="/sbin/iptables"
 log=log.txt
@@ -26,7 +50,24 @@ parse_logs(){
         fi
     done < service_array
 }
-
+#---------------------------------------------------------------------------
+	#
+	#    FUNCTION:		isBlocked()
+	#
+  #    DATE:			Mar 6, 2018
+  #
+  #    DESIGNER:		Benedict Lo
+  #    Programmer:		Benedict Lo
+  #
+	#    DESCRIPTION:	Check if the ip is blocked if its blocked return true else unblock if it is expired
+  #
+  #    Parameters: String IP - IP address to check
+  #
+  #
+	#    RETURNS:
+	#                	bool blocked or not
+	#
+	#---------------------------------------------------------------------------
 isBlocked(){
   #if the ip exists in the file return true
   if grep -q $1 blocked; then
@@ -52,6 +93,23 @@ isBlocked(){
     return 1
   fi
 }
+#---------------------------------------------------------------------------
+	#
+	#    FUNCTION:		unblock()
+	#
+  #    DATE:			Mar 6, 2018
+  #
+  #    DESIGNER:		Benedict Lo
+  #    Programmer:		Benedict Lo
+  #
+	#    DESCRIPTION:	This method checks if the ips in the blocked list needs to be
+  #               needs to be unblocked
+	#
+	#
+	#    RETURNS:
+	#                	void
+	#
+	#---------------------------------------------------------------------------
 unblock(){
   #check if ips need to be unblocked first
   while read line
@@ -60,7 +118,25 @@ unblock(){
     isBlocked ${arr[3]}
 done < blocked
 }
-
+#---------------------------------------------------------------------------
+	#
+	#    FUNCTION:		block_ip()
+	#
+  #    DATE:			Mar 6, 2018
+  #
+  #    DESIGNER:		Benedict Lo
+  #    Programmer:		Benedict Lo
+  #
+	#    DESCRIPTION:	This method removes checks if the ip that was parsed is blocked
+  #                 If the ip isn't blocked block it and add it to iptables
+  #
+  #   Parameters: int time - duration to go back in the log
+  #               int amount - amount of fialed attempts 
+  #
+	#    RETURNS:
+	#                	void
+	#
+	#---------------------------------------------------------------------------
 block_ip(){
     #find ip and port of all failed attempts for ssh
     cat parsed_secure | grep -Po "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" | uniq -c > block_ip
@@ -102,7 +178,7 @@ if [ "$#" -ne 4 ]; then
 fi
 #check if ips need to be unblocked
 
-while true 
+while true
 do
     unblock
     parse_logs $1 $2 $3
